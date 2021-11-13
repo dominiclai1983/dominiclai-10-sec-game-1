@@ -1,0 +1,34 @@
+//setting the background color would equal to the browser hegith
+html, body {
+  position: relative; 
+  height: auto;
+  min-height: 100% !important;
+}
+
+body{
+  background: linear-gradient(#fde7b5, #f7d18b);
+  background-repeat: no-repeat;
+}
+
+.title{
+  background-color: white;
+  max-width: 650px;
+}
+
+.game{
+  background-color: white;
+  max-width: 500px;
+}
+
+.top-icon, .my-text{
+    color: rgba(75, 75, 75, 0.9);
+    vertical-align: middle;
+}
+
+#btn-arit{
+  width: 60px;
+}
+
+#btn-start{
+  width: 145px;
+}
