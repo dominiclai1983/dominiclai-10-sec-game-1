@@ -1,13 +1,168 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/dominic-icon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+
+    <!-- Importing Boostrap 4.6 Through CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <!-- importing Jquery umcompressed version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    
+    <!-- importing Fontaweson font-->
+    <script src="https://kit.fontawesome.com/e978eb03c2.js" crossorigin="anonymous"></script>
+    <title>Dominic Lai To Do List</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+  
   <body>
-    Hello world
+    <div class="container-fluid title mt-5 rounded">
+      <div class="row">
+        <div class="col-12 text-center">
+          <i class="fas fa-vector-square fa-3x my-1 top-icon"></i>
+          <span class="my-text" style="font-size: 30px;"> Dominic Lai 10 Sec Game</span>
+        </div>
+      </div>
+    </div>
+
+<<<<<<< HEAD
+    <div class="container-fluid game mt-1 rounded">
+      <div class="row">
+        <div class="col-4">
+          <div class="row">
+            <div class="col-12 text-center">
+              Arithmetic Operators
+            </div>
+          </div>
+          <!-- button 1st row -->
+          <div class="row no-gutters">
+            <div class="col-6 text-center">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn ari-btn btn-primary">
+                  <input type="checkbox">+
+                </label>
+              </div>
+            </div>
+            <div class="col-6 text-center">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn ari-btn btn-danger">
+                  <input type="checkbox" checked>-
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- button 2nd row -->
+          <div class="row no-gutters">
+            <div class="col-6 text-center mt-1">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn ari-btn btn-success">
+                  <input type="checkbox" checked>*
+                </label>
+              </div>
+            </div>
+            <div class="col-6 text-center mt-1">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn ari-btn btn-secondary">
+                  <input type="checkbox" checked>/
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- righside -->
+        <div class="col-8">
+          <div class="row">
+            <div class="col-12 text-center">
+              Time Remaining
+            </div>
+            <div class="col-12 d-flex align-middle">
+              <div class="game-play">
+                playing
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom row for both play game and ans-->
+      <div class="row">
+        <div class="col-4 text-center my-1">
+          <button type="button" class="btn play-btn btn-warning" disabled>Play Game!</button>
+        </div>
+        <div class="col-8 text-center my-1">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon1">Answer</button>
+            </div>
+              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
+=======
+    <div class="container-fluid game my-1 rounded">
+      <div class="row 1st-row my-2">
+      <!-- left hand side-->
+        <div class="col-4 text-center">
+          <div class="row">
+            <div class="col-12 text-center">
+              Arithmetic Operator
+            </div>
+          </div>
+          <!-- sub row 1 -->
+          <div class="row">
+            <div class="col-6 text-center">
+              <button type="button" id="btn-arit" class="btn btn-primary">+</button>
+            </div>
+            <div class="col-6 text-center">
+              <button type="button" id="btn-arit" class="btn btn-success">-</button>
+            </div>
+          </div>
+          <!-- sub row 2 -->
+          <div class="row">
+            <div class="col-6 text-center">
+              <button type="button" id="btn-arit" class="btn btn-danger mt-1">*</button>
+            </div>
+            <div class="col-6 text-center">
+              <button type="button" id="btn-arit" class="btn btn btn-secondary mt-1">%</button>
+            </div>
+          </div>
+          <!-- sub row 3 
+          <div class="row">
+            <div class="col-12 text-center">
+              <button type="button" id="btn-start" class="btn btn-warning my-2">Game Start!</button>
+            </div>
+          </div>
+          -->
+        </div>
+      <!-- right hand side-->
+        <div class="col-8 text-center">
+          <!-- progression bar for the time-->
+          <div class="row">
+            <div class="w-100 col-12 style="background-color: #eee;">Width 100%</div>
+          </div>
+          <div class="row my-1 col-12 d-flex align-items-center">
+            something
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 mb-1">
+          <button type="button" id="btn-start" class="btn btn-warning">Game Start!</button>
+        </div>
+        <div class="col-8 mb-1">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <button class="btn btn-secondary add-item" type="button" id="button-addon1" disabled>Answer</button>
+          </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        </div>
+>>>>>>> 8f5e70a17e6530dfb0ccfa45f101cf48b9113742
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
